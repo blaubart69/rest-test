@@ -7,9 +7,10 @@
 	id="WebApp_ID" version="3.0">
 
 	<module-name>RESTTest</module-name>
-
+	
 	<login-config>
 		<auth-method>BASIC</auth-method>
 	</login-config>
+	
 
 </web-app>
