@@ -33,18 +33,19 @@
 			<version>${version.org.jboss.resteasy}</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<!--
 		<dependency>
 			<groupId>jakarta.inject</groupId>
 			<artifactId>jakarta.inject-api</artifactId>
 			<version>${version.jakarta.inject}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>jakarta.annotation</groupId>
 			<artifactId>jakarta.annotation-api</artifactId>
 			<version>${version.jakarta.annotation}</version>
 		</dependency>
-
+		-->
 	</dependencies>
 	<build>
 		<finalName>rest-test</finalName>

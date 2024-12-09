@@ -1,0 +1,2 @@
+/subsystem=elytron-oidc-client/secure-deployment=chris.war:remove
+/subsystem=elytron-oidc-client/secure-deployment=chris.war:add(auth-server-url="http://localhost:8090/",resource=jboss,realm=vaeb,ssl-required=EXTERNAL,credential={secret=ba73f198-58ed-4153-a7bf-726eb2fadada})
