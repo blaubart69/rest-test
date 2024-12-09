@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 //import jakarta.inject.Singleton;
 
 @Path("/admins")
-@RolesAllowed({"Bumsti"})
+@RolesAllowed({"Users"})
 //@Singleton
 public class TestRestController {
 
