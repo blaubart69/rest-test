@@ -6,34 +6,24 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
-    <!--
-	<servlet-mapping>
+    <context-param>
+        <param-name>resteasy.role.based.security</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <servlet-mapping>
 		<servlet-name>javax.ws.rs.core.Application</servlet-name>
 		<url-pattern>/api/*</url-pattern>
 	</servlet-mapping>
--->
-
-<!--
-<web-app
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	id="WebApp_ID" version="3.0">
--->
-	<!--<module-name>RESTTest</module-name>-->
-	
-    <!--
+    
 	<login-config>
 		<auth-method>OIDC</auth-method>
 	</login-config>
-    -->
-
-    <!--
+    
 	<security-constraint>
         <web-resource-collection>
             <web-resource-name>All Resources</web-resource-name>
-            <url-pattern>/*</url-pattern>
+            <url-pattern>/api/*</url-pattern>
             <http-method-omission>OPTIONS</http-method-omission>
         </web-resource-collection>
         <auth-constraint>
@@ -44,6 +34,5 @@
 	<security-role>
         <role-name>*</role-name>
     </security-role>
-    -->
 
 </web-app>

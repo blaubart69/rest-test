@@ -14,7 +14,7 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<version.org.jboss.resteasy>3.15.6.Final</version.org.jboss.resteasy>
+		<version.org.jboss.resteasy>3.15.1.Final</version.org.jboss.resteasy>
 		<version.maven.war.plugin>3.4.0</version.maven.war.plugin>
 		<version.jakarta.inject>2.0.1</version.jakarta.inject>
 		<version.jakarta.annotation>3.0.0</version.jakarta.annotation>
@@ -33,19 +33,6 @@
 			<version>${version.org.jboss.resteasy}</version>
 			<scope>provided</scope>
 		</dependency>
-		<!--
-		<dependency>
-			<groupId>jakarta.inject</groupId>
-			<artifactId>jakarta.inject-api</artifactId>
-			<version>${version.jakarta.inject}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>jakarta.annotation</groupId>
-			<artifactId>jakarta.annotation-api</artifactId>
-			<version>${version.jakarta.annotation}</version>
-		</dependency>
-		-->
 	</dependencies>
 	<build>
 		<finalName>rest-test</finalName>
@@ -55,7 +42,6 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>${version.maven.war.plugin}</version>
 				<configuration>
-					<!--<webappDirectory>/home/hfrebort/dev/schaefer/deployments/</webappDirectory>-->
 				</configuration>
 			</plugin>
 		</plugins>
