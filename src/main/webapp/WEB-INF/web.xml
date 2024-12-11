@@ -12,7 +12,7 @@
     </context-param>
 
     <servlet-mapping>
-		<servlet-name>javax.ws.rs.core.Application</servlet-name>
+		<servlet-name>jakarta.ws.rs.core.Application</servlet-name>
 		<url-pattern>/api/*</url-pattern>
 	</servlet-mapping>
     
